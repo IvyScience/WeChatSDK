@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TBWeChatSDK'
-  s.version          = '0.3.3'
+  s.version          = '0.3.4'
   s.summary          = 'Swift version of WeChat SDK.'
   s.description      = <<-DESC
   Swift version of WeChat SDK.
@@ -14,13 +14,14 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/teambition/WeChatSDK'
   s.license          = { :type => 'MIT', :file => 'LICENSE.md' }
   s.author           = { 'teambition mobile' => 'teambition-mobile@alibaba-inc.com' }
-  s.source           = { :git => 'https://github.com/teambition/WeChatSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/IvyScience/WeChatSDK.git', :tag => s.version.to_s }
 
   s.swift_version = '5.0'
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'WeChatSDK/*.swift', 'WeChatSDK/lib/*.h'
   s.vendored_libraries = 'WeChatSDK/lib/libWeChatSDK.a'
+  s.static_framework = true
 
   s.library = 'c++'
   s.frameworks = 'WebKit'
